@@ -42,11 +42,11 @@
                 }
 
                 const newTask = {
-                    // id: Math.floor(Math.random() * 100000),
+                    // id: Date.now(),
                     text: this.text,
                     day: this.day,
                     reminder: this.reminder,
-                }
+                };
 
                 this.$emit('add-task', newTask)
 
